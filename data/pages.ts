@@ -2,12 +2,12 @@ export const pages = [
   {
     path: '/',
     title: 'Home',
-    desc: 'My name is Arga Astri Bimantara, you can call me Aruga. I was born in Jakarta, Indonesia.',
+    desc: 'My Name is Nabil Hafiyyan Zihni, you can call me xzhndvs. I was born in Jakarta, Indonesia.',
   },
   {
     path: '/about',
     title: 'About',
-    desc: 'My name is Arga Astri Bimantara, you can call me Aruga. I was born in Jakarta, Indonesia.',
+    desc: 'My Name is Nabil Hafiyyan Zihni, you can call me xzhndvs. I was born in Jakarta, Indonesia.',
   },
   {
     path: '/works',

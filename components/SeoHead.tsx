@@ -5,13 +5,13 @@ import { useRouter } from 'next/router';
 const defaultMeta = {
   title: 'xzhndvs',
   siteName: 'xzhndvs',
-  desc: 'xzhndvs is one of the developers in Indonesia. My name is Nabil Hafiyyan Zihni M, dont forget ;',
+  desc: 'xzhndvs is one of the Developer in Indonesia. My Name is Nabil Hafiyyan Zihni M, Nothing Like 127.0.0.1 ;',
   // change base url of your web (without '/' at the end)
   url: 'https://xnbl354.xyz',
   type: 'website',
   // change to follow, index if you want to
   robots: 'nofollow, noindex',
-  image: 'https://arugaz.me/images/pages/profile.jpg',
+  image: 'https://g.top4top.io/p_2636z32ll1.png',
   author: 'xzhndvs',
 };
 

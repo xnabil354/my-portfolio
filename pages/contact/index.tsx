@@ -1,11 +1,11 @@
-import { createRef, useState } from 'react';
+import { createRef, useState, useRef } from 'react';
 import type { SyntheticEvent } from 'react';
 import { motion } from 'framer-motion';
 import { contentAnimation, fadeAnimation } from '@/data/animations';
 import { contacts } from '@/data/contacts';
 
 export default function Contact() {
-  const formRef = createRef<HTMLFormElement>();
+  const formRef = useRef<HTMLFormElement>(null);
   const [openModal, setOpenModal] = useState(false);
   const [messageAlert, setMessageAlert] = useState(false);
 
@@ -32,13 +32,20 @@ export default function Contact() {
         if (formRef.current && formRef.current.reset) formRef.current.reset();
         setMessageAlert(true);
         setOpenModal(true);
-        e.target.reset();
       })
       .catch(() => {
         setMessageAlert(false);
         setOpenModal(true);
       });
   };
+
+  const handleReset = () => {
+    if (formRef.current) {
+      (formRef.current as HTMLFormElement).reset();
+    }
+  };
+
+
 
   return (
     <section className="relative flex w-full flex-col items-center justify-evenly py-40 md:h-screen md:flex-row md:overflow-hidden">
@@ -106,6 +113,7 @@ export default function Contact() {
               required
             />
             <button
+              onSubmit={handleReset}
               type="submit"
               className="w-full cursor-none rounded-md border border-secondary-light bg-primary-dark px-4 py-1 font-semibold transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none">
               Send Message

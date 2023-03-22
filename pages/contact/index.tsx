@@ -32,7 +32,7 @@ export default function Contact() {
         if (formRef.current && formRef.current.reset) formRef.current.reset();
         setMessageAlert(true);
         setOpenModal(true);
-        // e.target.reset();
+        e.target.reset();
       })
       .catch(() => {
         setMessageAlert(false);

@@ -21,7 +21,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   form.append('subject', body.subject);
   form.append('message', body.message);
 
-  fetch(`https://script.google.com/macros/s/${process.env.GOOGLE_SHEETS_ID}/exec`, {
+  //  GET YOUR GOOGLESHEETS ID AND PASTE HERE!
+  //  timestamp, name, email, subject, message
+  //  TUTORIAL: https://github.com/jamiewilson/form-to-google-sheets / https://www.youtube.com/watch?v=2XosKncBoQ4
+
+  const GOOGLE_SHEETS_ID = "AKfycbzREywTLx36_T9bdc6nOtDqXVxN82katBJJmv6CJaESteWC7JcqnocTG66FkjW-fh6I5g"
+
+  fetch(`https://script.google.com/macros/s/${GOOGLE_SHEETS_ID}/exec`, {
     method: 'POST',
     // @ts-ignore
     body: form,

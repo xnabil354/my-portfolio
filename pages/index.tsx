@@ -50,7 +50,7 @@ export default function Home() {
         <h4 className="text-base font-light transition-all duration-500 mb-4 hover:text-primary-light">
         Technology Enthusiasts
         </h4>
-        <Link target="_blank" href="../public/CV/CV-Nabil-Hafiyyan-Zihni-M.pdf" className="cursor-none rounded-md border border-secondary-light bg-primary-dark px-4 py-1 font-semibold transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none">
+        <Link target="_blank" href="https://t.me/TKJ_CloudFiles_bot?start=vF2lZdKITK" className="cursor-none rounded-md border border-secondary-light bg-primary-dark px-4 py-1 font-semibold transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none">
           CV
           </Link>
       </motion.section>

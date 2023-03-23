@@ -24,6 +24,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const countryCode = req.query.countryCode as string;
   const creator = "xzhndvs";
 
+  if (!nomorCode || !countryCode) {
+    return res.status(400).json({
+      status: 'error',
+      message: 'Invalid request. Please provide both nomorCode and countryCode.',
+    });
+  }
+
   const searchData = {
     number: nomorCode,
     countryCode: countryCode,
@@ -34,7 +41,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     const data = await truecallerjs.searchNumber(searchData);
     
     // @ts-ignore
-    res.status(200).json({ response, data: data });
+    res.status(200).json({ creator, data: data });
   } catch (err: unknown) {
     res.status(500).json({
       status: 'error',

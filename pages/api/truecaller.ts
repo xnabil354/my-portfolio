@@ -3,12 +3,14 @@ import * as truecallerjs from 'truecallerjs';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 interface MyResponse {
+  creator: string;
   status: string;
   message: string;
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<MyResponse>): Promise<void> {
   const response: MyResponse = {
+    creator: 'xzhndvs',
     status: 'success',
     message: 'Your request was successful!'
   };
@@ -22,7 +24,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 
   const nomorCode = req.query.nomorCode as string;
   const countryCode = req.query.countryCode as string;
-  const creator = "xzhndvs";
 
   if (!nomorCode || !countryCode) {
     return res.status(400).json({
@@ -41,7 +42,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
     const data = await truecallerjs.searchNumber(searchData);
     
     // @ts-ignore
-    res.status(200).json({ creator, data: data });
+    res.status(200).json({ response, data: data });
   } catch (err: unknown) {
     res.status(500).json({
       status: 'error',

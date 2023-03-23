@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
-import FormData from 'form-data';
+// @ts-ignore
+import * as FormData from 'form-data';
 
 type Response = {
   status: string;
@@ -8,6 +9,7 @@ type Response = {
 };
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Response>) {
+  // @ts-ignore
   if (req.method !== 'POST')
     return res.status(405).json({
       status: 'error',

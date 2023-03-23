@@ -8,6 +8,7 @@ interface MyResponse {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<MyResponse>): Promise<void> {
+  // @ts-ignore
   if (req.method !== 'GET') {
     return res.status(405).json({
       status: 'error',
@@ -28,7 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   try {
     const data = await truecallerjs.searchNumber(searchData);
     // @ts-ignore
-    res.status(200).json({ status: 'ok', message: 'Success!', data: data });
+    res.status(200).json({ NextApiResponse<MyResponse>, data: data });
   } catch (err: unknown) {
     res.status(500).json({
       status: 'error',

@@ -3,7 +3,7 @@ export const projects = [
     title: 'School Management',
     slug: 'SMAN-15-Jakarta',
     img: '5.jpg',
-    demoUrl: 'https://sman15-jkt.sch.id',
+    demoUrl: 'https://sman15jkt.sch.id',
     sourceUrl: 'https://github.com/xnabil354',
     desc: 'Welcome to the official website of SMAN 15 Jakarta. In this digital era, the schools website is the leading information gateway as a means to disseminate various publications about the latest educational progress and achievements of SMAN 15 Jakarta.'
   },

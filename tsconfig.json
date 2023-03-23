@@ -19,6 +19,7 @@
       "@/components/*": ["components/*"],
       "@/data/*": ["data/*"],
       "@/image/*": ["public/images/*"],
+      "@/CV/*":["public/CV"],
       "@/style/*": ["styles/*"]
     }
   },

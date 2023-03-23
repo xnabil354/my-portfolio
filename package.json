@@ -11,6 +11,7 @@
     "write": "prettier --write ."
   },
   "dependencies": {
+    "truecallerjs": "1.1.5",
     "form-data": "4.0.0",
     "framer-motion": "7.6.4",
     "next": "13.0.1",

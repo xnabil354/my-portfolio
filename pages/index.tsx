@@ -37,7 +37,7 @@ export default function Home() {
               priority={true}
               src={profileImage}
               placeholder="blur"
-              alt="Arga Astri Bimantara"
+              alt="Nabil Hafiyyan Zihni M"
               className="relative rounded-full"
             />
           </motion.div>

@@ -60,6 +60,7 @@ export default function SeoHead(props: {
       <meta name="robots" content={meta.robots} />
       <meta name="description" content={meta.desc} />
       <link rel="canonical" href={meta.url} />
+      <meta name="google-site-verification" content="0BSZk0bGIDFX5KzZqtU1ZU-aLrWKlqS_KYmHGlH3NOc" />
       {/* Open Graph */}
       <meta property="og:url" content={meta.url} />
       <meta property="og:type" content={meta.type} />

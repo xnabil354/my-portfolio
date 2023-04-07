@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { contentAnimation, fadeAnimation, cardHomeAnimation } from '@/data/animations';
 import profileImage from '@/image/pages/profile.jpg';
+import Typewriter from 'typewriter-effect';
+
+
 
 export default function Home() {
   return (
@@ -48,11 +51,18 @@ export default function Home() {
         <h3 className="-mb-5 text-base font-normal mb-0">Hi there! i&apos;m...</h3>
         <h1 className="-ml-1 text-7xl font-bold text-primary-light">xzhndvs</h1>
         <h4 className="text-base font-light transition-all duration-500 mb-4 hover:text-primary-light">
-        Technology Enthusiasts
+          <Typewriter
+            options={{
+              strings: ['Technology Enthusiasts', 'Web Developer', 'Pentester', 'Children'],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+            }}
+          />
         </h4>
         <Link target="_blank" href="https://t.me/TKJ_CloudFiles_bot?start=vF2lZdKITK" className="cursor-none rounded-md border border-secondary-light bg-primary-dark px-4 py-1 font-semibold transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none">
           CV
-          </Link>
+        </Link>
       </motion.section>
     </main>
   );

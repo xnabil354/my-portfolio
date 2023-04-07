@@ -11,13 +11,14 @@
     "write": "prettier --write ."
   },
   "dependencies": {
-    "truecallerjs": "1.1.5",
     "form-data": "4.0.0",
     "framer-motion": "7.6.4",
     "next": "13.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "0.31.1"
+    "sharp": "0.31.1",
+    "truecallerjs": "1.1.5",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/node": "18.11.9",

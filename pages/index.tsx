@@ -5,8 +5,6 @@ import { contentAnimation, fadeAnimation, cardHomeAnimation } from '@/data/anima
 import profileImage from '@/image/pages/profile.jpg';
 import Typewriter from 'typewriter-effect';
 
-
-
 export default function Home() {
   return (
     <main className="relative flex w-full flex-col items-center justify-evenly py-40 md:h-screen md:flex-row md:overflow-hidden">

@@ -9,8 +9,7 @@ export default function Contact() {
   const [openModal, setOpenModal] = useState(false);
   const [messageAlert, setMessageAlert] = useState(false);
 
-
-  const submitForm = (e: SyntheticEvent) => {
+  const submitForm = async (e: SyntheticEvent) => {
     e.preventDefault();
     const target = e.target as typeof e.target & {
       name: { value: string };
@@ -28,7 +27,7 @@ export default function Contact() {
         message: target.message.value,
       }),
     })
-      .then(() => {
+      .then(async () => {
         if (formRef.current && formRef.current.reset) formRef.current.reset();
         setMessageAlert(true);
         setOpenModal(true);
@@ -37,7 +36,8 @@ export default function Contact() {
         setMessageAlert(false);
         setOpenModal(true);
       });
-  };
+
+    // Simulate form submission
 
   const handleReset = () => {
     if (formRef.current) {
@@ -136,4 +136,5 @@ export default function Contact() {
       </motion.div>
     </section>
   );
+}
 }

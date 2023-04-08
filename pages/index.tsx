@@ -51,7 +51,7 @@ export default function Home() {
         <h4 className="text-base font-light transition-all duration-500 mb-4 hover:text-primary-light">
           <Typewriter
             options={{
-              strings: ['Technology Enthusiasts', 'Web Developer', 'Pentester', 'Children'],
+              strings: ['Technology Enthusiasts', 'Web Developer', 'Pentester', 'Student'],
               autoStart: true,
               loop: true,
               delay: 75,

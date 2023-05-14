@@ -46,9 +46,9 @@ export default function Home() {
       </motion.div>
 
       <motion.section {...contentAnimation} className="relative order-1 w-1/3 md:order-2">
-        <h3 className="-mb-5 text-base font-normal mb-0">Hi there! i&apos;m...</h3>
+        <h3 className="-mb-5 mb-0 text-base font-normal">Hi there! i&apos;m...</h3>
         <h1 className="-ml-1 text-7xl font-bold text-primary-light">xzhndvs</h1>
-        <h4 className="text-base font-light transition-all duration-500 mb-4 hover:text-primary-light">
+        <h4 className="mb-4 text-base font-light transition-all duration-500 hover:text-primary-light">
           <Typewriter
             options={{
               strings: ['Technology Enthusiasts', 'Web Developer', 'Pentester', 'Student'],
@@ -58,9 +58,13 @@ export default function Home() {
             }}
           />
         </h4>
-        <Link target="_blank" href="./public/CV/CV - Nabil Hafiyyan Zihni M.pdf" className="cursor-none rounded-md border border-secondary-light bg-primary-dark px-4 py-1 font-semibold transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none">
-          CV
-        </Link>
+        <a target="_blank" href="./public/CV/CV - Nabil Hafiyyan Zihni M.pdf">
+          <button
+            type="button"
+            className="cursor-none rounded-md border border-secondary-light bg-primary-dark px-4 py-1 font-semibold transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none">
+            CV
+          </button>
+        </a>
       </motion.section>
     </main>
   );

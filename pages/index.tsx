@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { contentAnimation, fadeAnimation, cardHomeAnimation } from '@/data/animations';
 import profileImage from '@/image/pages/profile.jpg';
 import Typewriter from 'typewriter-effect';
+import fs from 'fs';
 
 export default function Home() {
   return (
@@ -58,7 +59,7 @@ export default function Home() {
             }}
           />
         </h4>
-        <a target="_blank" href="./public/CV/CV - Nabil Hafiyyan Zihni M.pdf">
+        <a target="_blank" href="/CV/CV%20-%20Nabil%20Hafiyyan%20Zihni%20M.pdf" rel="noopener noreferrer">
           <button
             type="button"
             className="cursor-none rounded-md border border-secondary-light bg-primary-dark px-4 py-1 font-semibold transition duration-500 ease-in-out placeholder:text-secondary-light hover:border-primary-light hover:bg-secondary-dark hover:text-primary-light hover:outline-none focus:border-primary-light focus:bg-secondary-dark focus:text-primary-light focus:outline-none">

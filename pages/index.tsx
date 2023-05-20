@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { contentAnimation, fadeAnimation, cardHomeAnimation } from '@/data/animations';
 import profileImage from '@/image/pages/profile.jpg';
 import Typewriter from 'typewriter-effect';
-import fs from 'fs';
 
 export default function Home() {
   return (
@@ -47,7 +46,7 @@ export default function Home() {
       </motion.div>
 
       <motion.section {...contentAnimation} className="relative order-1 w-1/3 md:order-2">
-        <h3 className="-mb-5 mb-0 text-base font-normal">Hi there! i&apos;m...</h3>
+        <h3 className="mb-0 text-base font-normal">Hi there! i&apos;m...</h3>
         <h1 className="-ml-1 text-7xl font-bold text-primary-light">xzhndvs</h1>
         <h4 className="mb-4 text-base font-light transition-all duration-500 hover:text-primary-light">
           <Typewriter
